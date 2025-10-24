@@ -1,0 +1,769 @@
+/* Add these CSS rules to your styles.css */
+
+/* Navigation styling */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav li {
+    margin: 0;
+  }
+
+  nav a {
+    text-decoration: none;
+    font-family: 'Outfit', sans-serif; /* Use the Outfit font */
+    font-size: 26px;
+    font-weight: 500; /* Semibold */
+    color: var(--color-white);
+    transition: font-size 0.3s; /* Smooth font size transition */
+  }
+
+  /* Adjust the margin between navigation items */
+  nav li + li {
+    margin-left: 20px;
+  }
+
+  /* Position the navigation bar */
+  nav {
+    width: 582px; /* Set the width of the navigation bar */
+    margin: 0 auto; /* Center the navigation bar */
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* Position the navigation bar within the page width */
+  .header-item {
+    position: absolute;
+    top: 132px;
+    left: calc((100% - 582px) / 2); /* Center the navigation within 1440px page width */
+    width: 582px;
+    background-color: #951A2C;
+    height: 52px;
+  }
+
+  /* Change text color on hover */
+  nav a:hover {
+    color: #000;
+    font-size: 28px; /* Increase font size on hover */
+  }
+
+  .header-child,
+  .header-item {
+    position: absolute;
+    left: calc(50% - 720px);
+    width: 1440px;
+  }
+  .header-child {
+    position: absolute;
+    left: calc(50% - 720px);
+    width: 1440px;
+    top: 0;
+    background-color: #da2e47;
+    height: 132px;
+    z-index: 1; /* Ensure the header has a higher z-index */
+  }
+  .logo-icon {
+    position: absolute;
+    top: 13px;
+    left: 54px;
+    width: 105px;
+    height: 110px;
+    object-fit: cover;
+  }
+
+  h1 {
+    color: var(--color-white); /* White text color */
+    font-size: 80px; /* Font size 80 pixels */
+    font-family: var(--task-bar); /* Use "Outfit" font */
+    font-weight: 800; /* Extra bold */
+    margin: 0; /* Remove default margin */
+    text-align: left; /* Align text to the left */
+    position: absolute;
+    top: 22px; /* Align vertically at 22px from the top */
+    left: 188px; /* Align horizontally at 188px from the left */
+  }
+
+  @media (min-width: 1440px) {
+    h1 {
+      left: 188px; /* Start 188px from the left */
+    }
+  }
+.log-in {
+    text-decoration: none;
+    position: absolute;
+    top: 88px;
+    left: calc(50% + 405px);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-black);
+    text-align: left;
+}
+
+.header-inner {
+    position: absolute;
+    top: 71px;
+    left: calc(50% + 466px);
+    border-radius: 50%;
+    background-color: #d9d9d9;
+    width: 54px;
+    height: 52px;
+}
+
+.log-icon {
+    position: absolute;
+
+    width: 54px;
+    height: 52px;
+}
+
+.header {
+    top: 0;
+    left: calc(50% - 720px);
+    width: 1440px;
+    height: 184px;
+    color: var(--color-white);
+    font-family: var(--task-bar);
+}
+
+.dog-cat-icon {
+  position: absolute;
+  top: 184px;
+  left: calc(50% - 532px);
+  width: 1065px;
+  height: 462px;
+  object-fit: cover;
+}
+.start-body-child {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 481.5px);
+  background: radial-gradient(
+    50% 50%at 50% 50%,
+    #f99aaf,
+    rgba(255, 16, 69, 0.07) 92.71%,
+    rgba(255, 0, 56, 0)
+  );
+  width: 962px;
+  height: 75px;
+}
+.welcome-to-bloodbond {
+  margin: 0;
+  position: absolute;
+  top: 5px;
+  left: calc(50% - 392.5px);
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+}
+.start-body-item {
+  position: absolute;
+  top: 94px;
+  left: calc(50% - 532.5px);
+  width: 1065px;
+  height: 103px;
+}
+.drop1-icon,
+.drop2-icon {
+  position: absolute;
+  top: 84px;
+  left: calc(50% + 290.5px);
+  width: 163px;
+  height: 110px;
+  object-fit: cover;
+}
+.drop1-icon {
+  left: calc(50% - 457.5px);
+  width: 185px;
+}
+.steps {
+  font-weight: 800;
+}
+.to-help-save {
+  font-weight: 500;
+}
+
+.steps-to-help-container {
+  position: absolute;
+  top: 120px;
+  left: calc(50% - 240.5px);
+  font-size: 46px;
+  color: #b93a3d;
+  text-align: center;
+}
+.group-child {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 406.5px);
+  width: 813px;
+  height: 223px;
+}
+.group-parent {
+  position: absolute;
+  top: 189px;
+  left: calc(50% - 75.5px);
+  left: calc(50% + 260.5px);
+  top: 270px;
+  left: calc(50% - 408.5px);
+  width: 813px;
+  height: 223px;
+  font-size: var(--body-head-size);
+  color: var(--color-black);
+}
+.start-body {
+  position: absolute;
+  top: 689px;
+  left: calc(50% - 532px);
+  width: 1065px;
+  height: 493px;
+  font-size: 58px;
+  color: var(--color-gray-100);
+}
+.introduction-to-blood {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 219.75px);
+  font-size: var(--title-size);
+  text-decoration: underline;
+  font-weight: 500;
+}
+.blood-donation-is {
+  margin: 0;
+  position: absolute;
+  top: 55px;
+  left: calc(50% - 371.75px);
+  display: inline-block;
+  width: 742px;
+  height: 117px;
+}
+.intro1-icon,
+.intro2-icon,
+.intro2-icon1 {
+  position: absolute;
+  top: 143px;
+  left: calc(50% - 289.75px);
+  width: 578px;
+  height: 327px;
+  object-fit: cover;
+}
+.intro2-icon,
+.intro2-icon1 {
+  top: 0px;
+  left: calc(50% + 178.5px);
+  width: 359px;
+}
+.intro2-icon1 {
+  top: 0;
+  left: calc(50% + 178.5px);
+  width: 219px;
+  height: 187px;
+}
+.intro2-icon{
+    filter: blur(15px);
+    width: 230px;
+  height: 199px;
+  bottom: 10px;
+  left: 570px;
+}
+.blood-donation-is1 {
+  position: absolute;
+  top: 72px;
+  left: calc(50% - 365.5px);
+  font-weight: 300;
+  display: inline-block;
+  width: 522px;
+  height: 103px;
+  font-family: inter;
+}
+.bieligi-child {
+    position: absolute;
+    top: 25px;
+    left: calc(50% - 34.1px);
+    background: linear-gradient(
+      180deg,
+      #fff0f2 9.38%,
+      rgba(255, 16, 69, 0.42) 31.25%
+    );
+    width: 34.8px;
+    height: 363.4px;
+    transform: rotate(89.89deg);
+    transform-origin: 0 0;
+  }
+
+  .eligibility-and-types {
+    font-family: inter;
+    position: absolute;
+    top: 362px; /* Adjust the top position to fit within the .bieligi-child element */
+    left: 5px; /* Adjust the left position to align with the top of .bieligi-child */
+    color: var(--color-gray-100);
+    text-align: center;
+    width: 363px;
+    transform: rotate(-90deg); /* Rotate the element back to horizontal */
+    transform-origin: left top; /* Set the rotation origin to the top left corner */
+  }
+
+
+.bieligi {
+  position: absolute;
+  top: 516px;
+  left: calc(50% - 442.75px);
+  width: 795px;
+  height: 187px;
+  text-align: left;
+}
+.intro3-icon,
+.intro3-icon1 {
+  position: absolute;
+  top: -55px;
+  left: calc(50% - 467.75px);
+  width: 369px;
+  height: 369px;
+  object-fit: cover;
+}
+.intro3-icon1 {
+  top: 20px;
+  left: calc(50% - 392.75px);
+  width: 219px;
+  height: 219px;
+}
+.intro3-icon {
+    filter: blur(20px);
+    width: 240px;
+    height: 244px;
+    top: 10px;
+    left: 1px;
+}
+.donors-can-give {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 261px);
+  font-weight: 300;
+  display: inline-block;
+  width: 522px;
+  height: 52px;
+  font-family: inter;
+}
+.registration {
+  margin-bottom: 0;
+}
+.registration-health-screening {
+  margin: 0;
+  padding-left: 27px;
+  font-family: inter;
+}
+.registration-health-screening-container {
+  position: absolute;
+  top: 64px;
+  left: calc(50% + 7px);
+  font-size: var(--font-inherit);
+  font-weight: 300;
+  font-family: var(--font-inherit);
+  text-align: left;
+  display: inline-block;
+  width: 254px;
+  height: 103px;
+}
+.bulletgrp {
+  position: absolute;
+  top: 47px;
+  left: calc(50% - 157.75px);
+  width: 522px;
+  height: 167px;
+}
+.bidonapro-child {
+        position: absolute;
+
+        left: calc(50% + 355px);
+        background: linear-gradient(
+          180deg,
+          rgba(255, 16, 69, 0.42) 9.38%, /* Swap positions */
+          #fff0f2 100.25% /* Swap positions */
+        );
+        width: 34.8px;
+        height: 363.4px;
+        transform: rotate(89.89deg);
+        transform-origin: 0 0;
+    }
+
+.the-donation-process {
+    font-family: inter;
+    position: absolute;
+    top: 287px; /* Adjust the top position to fit within the .bieligi-child element */
+    left: 5px; /* Adjust the left position to align with the top of .bieligi-child */
+    color: var(--color-gray-100);
+    text-align: center;
+    width: 363px;
+    transform: rotate(-90deg); /* Rotate the element back to horizontal */
+    transform-origin: left top; /* Set the rotation origin to the top left corner */
+}
+.bidonapro {
+  position: absolute;
+  top: 789px;
+  left: calc(50% - 352.75px);
+  width: 795.5px;
+  height: 244px;
+  text-align: right;
+}
+.intro4-icon,
+.intro4-icon1 {
+  position: absolute;
+  top: -53px;
+  left: calc(50% + 5.5px);
+  width: 453px;
+  height: 366px;
+  object-fit: cover;
+}
+.intro4-icon1 {
+  top: 0;
+  left: calc(50% + 104.5px);
+  width: 293px;
+  height: 213px;
+}
+.intro4-icon {
+    filter: blur(15px);
+    width: 313px;
+    height: 226px;
+    top: 0px;
+    left: 490px;
+}
+.benefits-of-blood {
+  position: absolute;
+  top: 64px;
+  left: calc(50% - 355.5px);
+  font-weight: 300;
+  display: inline-block;
+  width: 439px;
+  height: 103px;
+  font-family: inter;
+}
+.bibeni-child {
+  position: absolute;
+  top: 17px;
+  left: calc(50% - 34.1px);
+  background: linear-gradient(
+    180deg,
+    #fff0f2 9.38%,
+    rgba(255, 16, 69, 0.42) 31.25%
+  );
+  width: 34.8px;
+  height: 363.4px;
+  transform: rotate(89.89deg);
+  transform-origin: 0 0;
+}
+.benefits-of-blood1 {
+    font-family: inter;
+    position: absolute;
+    top: 417px; /* Adjust the top position to fit within the .bieligi-child element */
+    left: 5px; /* Adjust the left position to align with the top of .bieligi-child */
+    color: var(--color-gray-100);
+    text-align: center;
+    width: 363px;
+    transform: rotate(-90deg); /* Rotate the element back to horizontal */
+    transform-origin: left top; /* Set the rotation origin to the top left corner */
+}
+.bibeni {
+  position: absolute;
+  top: 1090px;
+  left: calc(50% - 442.75px);
+  width: 795px;
+  height: 243px;
+  text-align: left;
+}
+.blood-donation-is2 {
+  margin: 0;
+  position: absolute;
+  top: 280px;
+  left: calc(50% - 370.75px);
+  display: inline-block;
+  width: 742px;
+  height: 117px;
+  font-family: inter;
+  text-align: center;
+}
+.blood-info-body {
+  position: absolute;
+  top: 1288px;
+  left: calc(50% - 442px);
+  width: 885.5px;
+  height: 1489px;
+  font-size: var(--body-text-size);
+}
+.blood-types {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 88.5px);
+    font-size: inherit;
+    text-decoration: underline;
+    font-weight: 500;
+    font-family: inherit;
+  }
+
+  .image-11-icon,
+  .image-12-icon {
+    position: absolute;
+    top: 234px;
+    left: calc(50% + 304.5px);
+    width: 45px;
+    height: 57.1px;
+    object-fit: cover;
+  }
+
+  .image-12-icon {
+    top: 317px;
+    width: 45px;
+    height: 60.1px;
+  }
+
+  .blood-type-img,
+  .bt-icon, .bt-cat-icon, .bt-dog-icon {
+    position: absolute;
+    left: calc(50% - 136.5px);
+    text-align: center;
+  }
+
+  .bt-icon {
+    top: 0;
+    object-fit: cover;
+    width: 533px;
+    height: 416px;
+  }
+
+  .bt-cat-icon {
+    top: 462px; /* Adjust the top value to position it below bt-icon */
+    width: 187;
+    height: 252;
+    left: 25px;
+  }
+
+  .bt-dog-icon {
+    top: 762px; /* Adjust the top value to position it below bt-icon */
+    width: 283;
+    height: 249;
+    left: 0px;
+  }
+
+  .blood-type-img {
+    top: 13px;
+  }
+
+.how-to-navigate,
+.mid-body {
+  position: absolute;
+  font-size: var(--title-size);
+}
+.mid-body {
+  top: 1520px;
+  left: calc(50% - 266px);
+  width: 533px;
+  height: 429px;
+}
+.how-to-navigate {
+  margin: 0;
+  top: 0;
+  left: calc(50% - 140px);
+  text-decoration: underline;
+  font-weight: 500;
+  font-family: inherit;
+  text-align: center;
+}
+.registration-on-website {
+  margin: 0;
+  font-family: inter;
+}
+.step-1-registration-container {
+  position: absolute;
+  top: 16px;
+  left: 69px;
+  font-weight: 800;
+}
+.step-1-registration-on-websit-wrapper {
+  position: absolute;
+  top: 5px;
+  left: calc(50% - 265.5px);
+  border-radius: var(--br-81xl);
+  background-color: var(--color-pink);
+  border: 4px solid var(--color-indianred-200);
+  box-sizing: border-box;
+  width: 587px;
+  height: 76px;
+  overflow: hidden;
+}
+.n1-child {
+  top: -10px;
+  left: calc(50% - 331.5px);
+  border-radius: 50%;
+  background-color: var(--color-lightpink);
+  border: 10px solid var(--color-indianred-100);
+  box-sizing: border-box;
+  width: 111px;
+  height: 105px;
+}
+.n1,
+.n1-child,
+.s1-icon {
+  position: absolute;
+}
+.s1-icon {
+  top: 13px;
+  left: calc(50% - 30px);
+  width: 63px;
+  height: 59px;
+  object-fit: cover;
+}
+.n1 {
+  top: 109px;
+  left: calc(50% - 321px);
+  width: 644px;
+  height: 85px;
+}
+.step-2-login-to-your-account-wrapper {
+  position: absolute;
+  top: 5px;
+  left: calc(50% - 266px);
+  border-radius: var(--br-81xl);
+  background-color: var(--color-pink);
+  border: 4px solid var(--color-indianred-200);
+  box-sizing: border-box;
+  width: 588px;
+  height: 76px;
+  overflow: hidden;
+}
+.n2-child {
+  position: absolute;
+  top: -10px;
+  left: calc(50% - 332px);
+  border-radius: 50%;
+  background-color: var(--color-lightpink);
+  border: 10px solid var(--color-indianred-100);
+  box-sizing: border-box;
+  width: 111px;
+  height: 105px;
+}
+.s2-icon {
+  position: absolute;
+  top: 10px;
+  left: calc(50% - 40px);
+  width: 92px;
+  height: 70px;
+  object-fit: cover;
+}
+.n2,
+.s3-icon {
+  position: absolute;
+  top: 140px;
+  left: calc(50% - 322px);
+  width: 644px;
+  height: 85px;
+}
+.s3-icon {
+  top: 11px;
+  left: calc(50% - 30px);
+  width: 63px;
+  height: 63px;
+  object-fit: cover;
+}
+.n3,
+.s4-icon {
+  position: absolute;
+  top: 141px;
+  left: calc(50% - 322px);
+  width: 644px;
+  height: 85px;
+}
+.s4-icon {
+  top: 6px;
+  left: calc(50% - 30px);
+  width: 63px;
+  height: 66.1px;
+  object-fit: cover;
+}
+.n4,
+.s5-icon {
+  position: absolute;
+  top: 141px;
+  left: calc(50% - 322px);
+  width: 644px;
+  height: 85px;
+}
+.s5-icon {
+  top: 9px;
+  left: calc(50% - 33px);
+  width: 67px;
+  height: 67px;
+  object-fit: cover;
+}
+.n5,
+.navigate {
+  position: absolute;
+  top: 141px;
+  left: calc(50% - 322px);
+  width: 644px;
+  height: 85px;
+}
+.navigate {
+  top: 2630px;
+  height: 738px;
+  text-align: left;
+  font-size: var(--nav-size);
+}
+.introduction-to-blood, .blood-types, .how-to-navigate {
+    font-family: var(--nav);
+}
+.footer-child {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 720px);
+  background-color: #11152e;
+  width: 1440px;
+  height: 245px;
+}
+.bloodbondwebsite2gmailcom {
+  color: #ef4b4b;
+}
+.contact-us-email-bloodbondwe-container {
+  text-decoration: none;
+  position: absolute;
+  top: 159px;
+  left: calc(50% - 393px);
+  display: inline-block;
+  width: 786.9px;
+  height: 64.2px;
+  color: inherit;
+}
+.about-us-this {
+  position: absolute;
+  top: 67px;
+  left: calc(50% - 532px);
+  display: inline-block;
+  width: 1065px;
+  height: 98px;
+}
+.footer {
+  position: absolute;
+  top: 603px;
+  left: calc(50% - 720px);
+  width: 1440px;
+  height: 245px;
+  color: var(--color-white);
+  font-family: var(--footer);
+  text-align: center;
+}
+.home {
+  text-decoration: none;
+  position: relative;
+  background-color: #fff0f2;
+  width: 100%;
+  height: 4548px;
+  text-align: center;
+  font-size: var(--footer-size);
+  color: var(--color-black);
+  font-family: var(--nav);
+}
+html {
+    background-color: #fff0f2;
+  }

@@ -1,0 +1,442 @@
+/* 
+ */
+/* Navigation styling */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav li {
+    margin: 0;
+  }
+
+  nav a {
+    text-decoration: none;
+    font-family: 'Outfit', sans-serif; /* Use the Outfit font */
+    font-size: 26px;
+    font-weight: 500; /* Semibold */
+    color: var(--color-white);
+    transition: font-size 0.3s; /* Smooth font size transition */
+  }
+
+  /* Adjust the margin between navigation items */
+  nav li + li {
+    margin-left: 20px;
+  }
+
+  /* Position the navigation bar */
+  nav {
+    width: 582px; /* Set the width of the navigation bar */
+    margin: 0 auto; /* Center the navigation bar */
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* Position the navigation bar within the page width */
+  .header-item {
+    position: absolute;
+    top: 132px;
+    left: calc((100% - 582px) / 2); /* Center the navigation within 1440px page width */
+    width: 582px;
+    background-color: #951A2C;
+    height: 52px;
+  }
+
+  /* Change text color on hover */
+  nav a:hover {
+    color: #000;
+    font-size: 28px; /* Increase font size on hover */
+  }
+
+  .header-child,
+  .header-item {
+    position: absolute;
+    left: calc(50% - 720px);
+    width: 1440px;
+  }
+  .header-child {
+    position: absolute;
+    left: calc(50% - 720px);
+    width: 1440px;
+    top: 0;
+    background-color: #da2e47;
+    height: 132px;
+    z-index: 1; /* Ensure the header has a higher z-index */
+  }
+  .logo-icon {
+    position: absolute;
+    top: 13px;
+    left: 74px;
+    width: 105px;
+    height: 110px;
+    object-fit: cover;
+  }
+
+  h1 {
+    color: var(--color-white); /* White text color */
+    font-size: 80px; /* Font size 80 pixels */
+    font-family: var(--task-bar); /* Use "Outfit" font */
+    font-weight: 800; /* Extra bold */
+    margin: 0; /* Remove default margin */
+    text-align: left; /* Align text to the left */
+    position: absolute;
+    top: 22px; /* Align vertically at 22px from the top */
+    left: 188px; /* Align horizontally at 188px from the left */
+  }
+
+  @media (min-width: 1440px) {
+    h1 {
+      left: 188px; /* Start 188px from the left */
+    }
+  }
+.log-in {
+    text-decoration: none;
+    position: absolute;
+    top: 88px;
+    left: calc(50% + 405px);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-black);
+    text-align: left;
+}
+
+.header-inner {
+    position: absolute;
+    top: 71px;
+    left: calc(50% + 466px);
+    border-radius: 50%;
+    background-color: #d9d9d9;
+    width: 54px;
+    height: 52px;
+}
+
+.log-icon {
+    position: absolute;
+    left: 0px;
+    width: 54px;
+    height: 52px;
+}
+
+.header {
+    top: 0;
+    left: calc(50% - 720px);
+    width: 1440px;
+    height: 184px;
+    color: var(--color-white);
+    font-family: var(--task-bar);
+}
+.desktop-1-child {
+  position: absolute;
+  top: 184px;
+  left: 170px;
+  background-color: var(--color-white);
+  width: 1098px;
+  height: 650px;
+}
+.accept-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-31xl);
+  background-color: #f99;
+  width: 456px;
+  height: 102px;
+}
+.accept1 {
+  position: absolute;
+  top: calc(50% - 34.4px);
+  left: calc(50% - 196px);
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 391px;
+  height: 69.5px;
+}
+.accept {
+  position: absolute;
+  top: 220px;
+  left: 492px;
+  width: 456px;
+  height: 102px;
+  font-size: 96px;
+  font-family: var(--font-poly);
+}
+.option-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-31xl);
+  background-color: var(--color-pink);
+  border: 2px solid var(--color-black);
+  box-sizing: border-box;
+  width: 484px;
+  height: 237px;
+}
+.option-inner,
+.option-item {
+  position: absolute;
+  top: 82px;
+  left: 0;
+  background-color: rgba(112, 156, 196, 0.67);
+  width: 484px;
+  height: 72px;
+}
+.option-inner {
+  top: 154px;
+  border-radius: 0 0 var(--br-31xl) var(--br-31xl);
+  background-color: rgba(159, 172, 199, 0.01);
+  height: 83px;
+}
+.human {
+  position: absolute;
+  top: calc(50% - 24.5px);
+  left: calc(50% - 180px);
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 359px;
+  height: 49px;
+}
+.human,
+.option,
+.pet {
+  position: absolute;
+}
+.pet {
+  top: calc(50% + 41.5px);
+  left: calc(50% - 180px);
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 359px;
+  height: 49px;
+}
+
+
+.pet-child,
+.submit {
+  position: absolute;
+  height: 82px;
+}
+.submit {
+  top: 708px;
+  left: 311px;
+  width: 273px;
+  display: none;
+  font-size: var(--font-size-13xl);
+  color: var(--color-white);
+  font-family: var(--font-paytone-one);
+}
+.pet-child {
+  top: 0;
+  left: 0;
+  border-radius: var(--br-41xl);
+  background-color: var(--color-lemonchiffon);
+  border: 2px solid var(--color-black);
+  box-sizing: border-box;
+  width: 268px;
+}
+.pet-child:hover {
+  font-size: 28px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  border-radius: var(--br-41xl);
+  width: 268px;
+}
+.pet2 {
+  position: absolute;
+  top: calc(50% - 35px);
+  left: calc(50% - 65px);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 129px;
+  height: 69px;
+}
+.pet1 {
+  text-decoration: none;
+  top: 146px;
+  left: 0;
+  width: 268px;
+  height: 82px;
+  color: inherit;
+}
+
+.human1,
+.human2,
+.pet1 {
+  position: absolute;
+}
+.human2 {
+  top: calc(50% - 35px);
+  left: calc(50% - 112px);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 224px;
+  height: 69px;
+}
+.human1 {
+  text-decoration: none;
+  top: 146px;
+  left: 313px;
+  width: 268px;
+  height: 82px;
+  color: inherit;
+}
+.category-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 40px;
+  background-color: #b93a3d;
+  width: 372px;
+  height: 73px;
+}
+.enter-category {
+  position: absolute;
+  top: calc(50% - 103px);
+  left: calc(50% - 240.5px);
+  text-transform: capitalize;
+  display: flex;
+  font-family: var(--font-puritan);
+  color: var(--color-white);
+  text-align: center;
+  align-items: center;
+  width: 360px;
+  height: 51px;
+
+}
+.category {
+  position: absolute;
+  top: 416px;
+  left: 188px;
+  width: 581px;
+  height: 228px;
+  font-size: 48;
+  font-family: var(--font-inter);
+}
+.image-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  background-color: var(--color-pink);
+  width: 361px;
+  height: 342px;
+}
+.image-2-icon {
+  position: absolute;
+  top: 1.1px;
+  left: 11px;
+  width: 340.2px;
+  height: 340.9px;
+  object-fit: cover;
+}
+.image {
+  position: absolute;
+  top: 371px;
+  left: 880px;
+  width: 361px;
+  height: 342px;
+}
+/* .login-child {
+   position: absolute;
+  top: 0;
+  left: 65px;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+  width: 51px;
+  height: 51px;
+}
+.vector-icon {
+  height: 150.65%;
+  width: 44.67%;
+  top: 0.8%;
+  right: 0.6%;
+  bottom: -7.45%;
+  left: 55.72%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.log-in,
+.login,
+.vector-icon {
+  position: absolute;
+}
+.log-in {
+  top: 16px;
+  left: 0;
+  font-weight: 600;
+}
+.login {
+  text-decoration: none;
+  top: 72px;
+  left: 1125px;
+  width: 116px;
+  height: 51px;
+  text-align: left;
+  font-size: 16px;
+  color: inherit;
+} */
+.footer-child {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 720px);
+  background-color: #11152e;
+  width: 1440px;
+  height: 245px;
+}
+.bloodbondwebsite2gmailcom {
+  color: #ef4b4b;
+}
+.contact-us-email-bloodbondwe-container {
+  text-decoration: none;
+  position: absolute;
+  top: 159px;
+  left: calc(50% - 393px);
+  display: inline-block;
+  width: 786.9px;
+  height: 64.2px;
+  color: inherit;
+}
+.about-us-this {
+  position: absolute;
+  top: 67px;
+  left: calc(50% - 532px);
+  display: inline-block;
+  width: 1065px;
+  height: 98px;
+}
+.footer {
+  position: absolute;
+  top: 843px;
+  left: calc(50% - 720px);
+  width: 1440px;
+  height: 245px;
+  color: var(--color-white);
+  font-family: var(--footer);
+  text-align: center;
+}
+.desktop-1 {
+   position: absolute;
+  background-color: #ffebee;
+  width: 100%;
+  height: 1083px;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--footer-size);
+  color: var(--color-black);
+  font-family: var(--task-bar);
+}

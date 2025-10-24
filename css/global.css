@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tiro+Bangla:wght@400&display=swap");
+body {
+  margin: 0;
+  line-height: normal;
+}
+:root {
+  /* fonts */
+  --footer: "Tiro Bangla";
+  --nav: Inter;
+  --font-inherit: inherit;
+  --task-bar: Outfit;
+  --font-paytone-one: "Paytone One";
+  --font-poly: Poly;
+  --font-puritan: Puritan;
+  --font-peddana: Peddana;
+
+  /* font sizes */
+  --font-size-xs: 12px;
+  --footer-size: 26px;
+  --nav-size: 18px;
+  --title-size: 30px;
+  --body-text-size: 20px;
+  --body-head-size: 28px;
+  --font-size-29xl: 48px;
+  --font-size-13xl: 32px;
+  --font-size-61xl: 80px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-gray-100: #370101;
+  --color-lightpink: #f0a3a3;
+  --color-indianred-100: #de5e5e;
+  --color-indianred-200: #a34848;
+  --color-pink: #efc1c1;
+  --color-black: #000;
+   --color-lemonchiffon: #fff1c7;
+  --color-crimson-100: #da2e47;
+
+  /* Border radiuses */
+  --br-81xl: 100px;
+  --br-41xl: 60px;
+  --br-31xl: 50px;
+}
+/* Gaps */
+  --gap-5xs: 8px;
+
+/* Paddings */
+  --padding-5xs: 8px;
+  --padding-9xs: 4px;
+
